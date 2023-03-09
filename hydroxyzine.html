@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head> 
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-06HPVBRKZ5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-06HPVBRKZ5');
+</script>
+       
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="소아 체중별, 연령별 약 용량 계산기입니다. 2022년 개정된 식약처의 ‘소아·청소년에 대한 의약품 적정사용 정보집’을 기반으로 소아에게 다빈도로 처방되는 약성분 중심으로 구성하였습니다. 약물별로 환아의 체중을 입력하면 적정 용량을 계산해줌으로써 약사의 처방감사 업무에 도움이 되고자 합니다." />
+        <meta name="author" content="김약사" />
+        <title>KidDose_김약사의 소아 약용량 계산기</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!--구글 애드센스-->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1548693432714938"
+        
+crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+           <!-- Sidebar-->
+           <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light"></div>
+              <div class="list-group list-group-flush">
+                <!----해열제----------------------------------------------------------------------->
+                <button id="antifevertoggleBtn" class="btn-custom" data-bs-toggle="offcanvas"><h4>해열제</h4></button>
+                <ul id="antifevermenulist">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="acetaminophen.html">Acetaminophen</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="dexibuprofen.html">Dexibuprofen</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="ibuprofen.html">Ibuprofen</a>
+                </ul>
+                <script>
+                    const antifevertoggleBtn = document.getElementById("antifevertoggleBtn");
+                    const antifevermenulist = document.getElementById("antifevermenulist");
+                    antifevermenulist.style.display = "none";
+                  
+                    antifevertoggleBtn.addEventListener("click", function() {
+                      if (antifevermenulist.style.display === "none") {
+                        antifevermenulist.style.display = "block";
+                      } else {
+                        antifevermenulist.style.display = "none";
+                      }
+                    });
+                  </script>
+                <br><br>
+                <!----항균제----------------------------------------------------------------------->
+                <button id="antitoggleBtn" class="btn-custom" data-bs-toggle="offcanvas"><h4>항균제</h4></button>
+                <ul id="antimenulist"> 
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="amoxi-cla.html">Amoxicillin/Clavulanate</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="amoxicillin.html">Amoxicillin</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="azithromycin.html">Azithromycin</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="cefaclor.html">Cefaclor</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="cefadroxil.html">Cefadroxil</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="cefdinir.html">Cefdinir</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="cefixime.html">Cefixime</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="cefpodoxime.html">Cefpodoxime</a> 
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="clarithromycin.html">Clarithromycin</a>
+                </ul>
+                <script>
+                    const antitoggleBtn = document.getElementById("antitoggleBtn");
+                    const antimenulist = document.getElementById("antimenulist");
+                    antimenulist.style.display = "none";
+                  
+                    antitoggleBtn.addEventListener("click", function() {
+                      if (antimenulist.style.display === "none") {
+                        antimenulist.style.display = "block";
+                      } else {
+                        antimenulist.style.display = "none";
+                      }
+                    });
+                  </script>
+                  <br><br>
+                   <!----기타항생물질----------------------------------------------------------------------->
+                <button id="antivirustoggleBtn" class="btn-custom" data-bs-toggle="offcanvas"><h4>기타항생물질</h4></button>
+                <ul id="antivirusmenulist"> 
+                   <a class="list-group-item list-group-item-action list-group-item-light p-3" href="acyclovir.html">Acyclovir</a>
+                   <a class="list-group-item list-group-item-action list-group-item-light p-3" href="fluconazole.html">Fluconazole</a> 
+                   <a class="list-group-item list-group-item-action list-group-item-light p-3" href="inosiplex.html">Inosiplex</a>
+                   <a class="list-group-item list-group-item-action list-group-item-light p-3" href="oseltamivir.html">Oseltamivir</a>
+                </ul>
+                <script>
+                    const antivirustoggleBtn = document.getElementById("antivirustoggleBtn");
+                    const antivirusmenulist = document.getElementById("antivirusmenulist");
+                    antivirusmenulist.style.display = "none";
+                  
+                    antivirustoggleBtn.addEventListener("click", function() {
+                      if (antivirusmenulist.style.display === "none") {
+                        antivirusmenulist.style.display = "block";
+                      } else {
+                        antivirusmenulist.style.display = "none";
+                      }
+                    });
+                  </script>
+                <br><br>
+                <!----호흡기계약물----------------------------------------------------------------------->
+                <button id="respitoggleBtn" class="btn-custom" data-bs-toggle="offcanvas"><h4>호흡기계약물</h4></button>
+                <ul id="respimenulist"> 
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="aminophylline.html">Aminophylline</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Ambroxol-Clenbuterol.html">Ambroxol/Clenbuterol</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Carbocysteine.html">Carbocysteine</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Ebastine.html">Ebastine</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="formoterol.html">Formoterol</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Ivy leaf ext.html">Ivy leaf ext.</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="levocetirizine.html">Levocetirizine</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="levodropropizine.html">Levodropropizine</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="mequitazine.html">Mequitazine</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="pranlukast.html">Pranlukast</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Pseudoephedrine-Triprolidine.html">Pseudoephedrine/Triprolidine</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Synatura.html">Synatura</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="theophylline.html">Theophylline</a>
+                </ul>
+                <script>
+                    const respitoggleBtn = document.getElementById("respitoggleBtn");
+                    const respimenulist = document.getElementById("respimenulist");
+                    respimenulist.style.display = "none";
+                  
+                    respitoggleBtn.addEventListener("click", function() {
+                      if (respimenulist.style.display === "none") {
+                        respimenulist.style.display = "block";
+                      } else {
+                        respimenulist.style.display = "none";
+                      }
+                    });
+                  </script>
+                <br><br>
+               <!----소화기계약물----------------------------------------------------------------------->
+               <button id="digestoggleBtn" class="btn-custom" data-bs-toggle="offcanvas"><h4>소화기계약물</h4></button>
+               <ul id="digesmenulist"> 
+                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="cimetidine.html">Cimetidine</a>
+                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="dioctahedral smectite.html">Dioctahedral smectite</a>
+                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="domperidone.html">Domperidone</a> 
+                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="lactulose.html">Lactulose</a> 
+                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="mesalazine.html">Mesalazine</a>
+                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="metoclopramide.html">Metoclopramide</a>
+                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="trimebutine.html">Trimebutine</a>
+               </ul>
+               <script>
+                   const digestoggleBtn = document.getElementById("digestoggleBtn");
+                   const digesmenulist = document.getElementById("digesmenulist");
+                   digesmenulist.style.display = "none";
+                 
+                   digestoggleBtn.addEventListener("click", function() {
+                     if (digesmenulist.style.display === "none") {
+                       digesmenulist.style.display = "block";
+                     } else {
+                       digesmenulist.style.display = "none";
+                     }
+                   });
+                 </script>
+                 <br><br>
+                 <!----항전간제---------------------------------------------------------------------->
+               <button id="epiletoggleBtn" class="btn-custom" data-bs-toggle="offcanvas"><h4>항전간제</h4></button>
+               <ul id="epilemenulist"> 
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="carbamazepine.html">Carbamazepine</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="levetiracetam.html">Levetiracetam</a>                  
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="valproate.html">Valproate</a>
+               </ul>
+               <script>
+                   const epiletoggleBtn = document.getElementById("epiletoggleBtn");
+                   const epilemenulist = document.getElementById("epilemenulist");
+                   epilemenulist.style.display = "none";
+                 
+                   epiletoggleBtn.addEventListener("click", function() {
+                     if (epilemenulist.style.display === "none") {
+                       epilemenulist.style.display = "block";
+                     } else {
+                       epilemenulist.style.display = "none";
+                     }
+                   });
+                 </script>
+                <br><br>
+                <!----정신신경용제---------------------------------------------------------------------->
+                <button id="othertoggleBtn" class="btn-custom" data-bs-toggle="offcanvas"><h4>정신신경용제</h4></button>
+                <ul id="othermenulist"> 
+                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Chloral Hydrate.html">Chloral Hydrate</a>
+                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="hydroxyzine.html">Hydroxyzine</a> 
+                </ul>
+                <script>
+                    const othertoggleBtn = document.getElementById("othertoggleBtn");
+                    const othermenulist = document.getElementById("othermenulist");
+                    othermenulist.style.display = "none";
+                  
+                    othertoggleBtn.addEventListener("click", function() {
+                      if (othermenulist.style.display === "none") {
+                        othermenulist.style.display = "block";
+                      } else {
+                        othermenulist.style.display = "none";
+                      }
+                    });
+                  </script>  
+
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+               <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary" id="sidebarToggle">Menu</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" id="copyBtn">Share</a></li>
+                           <script>document.getElementById('copyBtn').addEventListener('click', function() {
+                                // 현재 페이지 URL 가져오기
+                                var url = window.location.href;
+                    
+                                // 클립보드에 복사
+                                navigator.clipboard.writeText(url);
+                                alert('URL이 클립보드에 복사되었습니다.');
+                            });</script> 
+                              <li class="nav-item"><a class="nav-link" href="https://www.health.kr" target="_blank">약학정보원 바로가기</a></li>   
+                             
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+                </nav>
+                <!-- Page content-->
+                <style>
+                 .hydroxbody {
+                    padding: 30px;
+                  }
+                </style>
+                
+                <div class="hydroxbody">
+                    <h1>Hydroxyzine</h1>
+                    <br>  
+                    <!-----table-->
+                    <style>
+                        table {
+                          border: 1px solid black;
+                          border-collapse: collapse;
+                        }
+                        th, td {
+                          border: 1px solid black;
+                          padding: 15  px;
+                        }
+                        </style>
+                        
+                    <table>
+                        <tr>
+                            <th>약효군</th>
+                            <th>제형</th>
+                            <th>대표약품명</th>
+                            <th>동일약품찾기</th>
+                        </tr>
+                        <tr>
+                            <td>정신신경용제</td>
+                            <td>시럽제 2mg/ml</td>
+                            <td>유시락스시럽</td>
+                            <td><a href="https://www.health.kr/searchDrug/result_sunb.asp?drug_cd=A11ABBBBB2522" target="_blank">클릭</a></td>
+                        </tr>
+                    </table>     
+
+                     <br><br>
+                    [진정, 보조 요법]<br><br>
+                     체중: 
+                    <input type="number" id="hydroxweightInput">kg
+                    <br><br>
+                    <input type="button" value="계산하기" id="hydroxcalculateButton">
+                    <br><br>
+                    1회량: 
+                    <input type="number" id="hydroxResultInput">ml
+                    <br><br>
+                    
+                    <input type="button" value="초기화" onclick="hydroxreset()">
+                    
+                    <script>
+                 document.getElementById("hydroxcalculateButton").addEventListener("click", function() {calculate();});
+               document.getElementById("hydroxweightInput").addEventListener("keyup", function(event) {if (event.keyCode === 13) {calculate();}});
+               function calculate() {
+                let hydroxweight = Number(document.getElementById("hydroxweightInput").value);
+                let hydroxResult = (hydroxweight * 0.6) / 2;
+                document.getElementById("hydroxResultInput").value = hydroxResult;
+                
+              };
+            
+                function hydroxreset(){
+                            document.getElementById("hydroxweightInput").value = "";
+                            document.getElementById("hydroxResultInput").value = "";
+                           }
+                            
+                  </script>
+            <br><br>
+                  <h4><소아 용법/용량></h4>
+                  [FDA 승인 적응증]-소아<br>
+                  · 불안증, 소양증<br>
+                  - 6세 이상: 50-100 mg/day (25-50ml/day) 분할 경구 투여<br>
+                  - 6세 미만: 50 mg/day (25ml/day) 분할 경구 투여<br>
+                  · 진정, 보조 요법: 0.6 mg/kg 경구 투여
+                </div>
+            </div>
+        </div>
+    
+           
+            
+          
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+    <footer>
+        <div class="container">
+          <p>reference:  식품의약품안전처 소아청소년에 대한 의약품 적정사용 정보집 2022년 개정판, 약학정보원, 킴스온라인<br>
+             수정 요청 및 문의사항 : kiddose23@gmail.com
+        </div>
+      </footer>
+</html>
