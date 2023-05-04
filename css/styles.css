@@ -17,7 +17,7 @@
 @media screen and (max-width: 767px){
   #sidebar{
     display: block;
-    transform: translateX(-280px);
+    transform: translateX(-170px);
     transition: transform 0.3s ease-in-out;
     position: absolute; 
     top: 0; 
@@ -25,14 +25,14 @@
     left: 0; 
     right: 0; 
     z-index: 999;
-    width: 280px;
+    width: 170px;
     padding-top: 100px;
   }
   #sidebar.show {
     transform: translateX(0);
   }
   #main-page.slide {
-    transform: translateX(280px);
+    transform: translateX(170px);
   }
 }
 
@@ -54,6 +54,15 @@
     transform: translateY(-2px); 
 } }
 
+.navbar-brand img {
+  height: 15vw; /* 뷰포트 너비에 상대적인 값으로 지정 */
+}
+
+@media (min-width: 768px) {
+  .navbar-brand img {
+    height: 90px; /* 데스크톱 화면에서는 고정값으로 지정 */
+  }
+}
 
 body { 
   height: 100%;
