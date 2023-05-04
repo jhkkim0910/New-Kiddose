@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class= content><h1>Cefadroxil</h1><br>
+      <div class="header" id="header-container"> 
+        <ul class="list-group list-group-horizontal">
+         <li class="list-group-item 1">약효군</li>
+         <li class="list-group-item 2">제형</li>
+         <li class="list-group-item 3">대표 약품</li>
+       </ul>
+       <ul class="list-group list-group-horizontal">
+         <li class="list-group-item list-group-item-primary">항균제/1세대 세팔로스포린계</li>
+         <li class="list-group-item list-group-item-primary">시럽제</li>
+         <li class="list-group-item list-group-item-primary">보령듀리세프건조시럽</li>
+       </ul></div><br><br>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                시럽제 125mg/5ml
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <div class="card">
+                <div class="card-body1">
+                체중: 
+                <input type="number" id="cedrox25weightInput" onkeyup="if (event.key === 'Enter') {cedrox25calculate();}">kg
+                <br><br>
+                <input type="button" class="btn btn-primary" value="계산하기" id="cedrox25calculateButton" onclick="cedrox25calculate()">
+                <br><br>
+                1일 용량: 
+                <input type="number" id="cedrox25ResultInput">ml
+                <br><br>
+                <input type="button" class="btn btn-primary" value="초기화" onclick="cedrox25reset()">
+                </div>
+              </div><br><br>
+                      
+              <div class="card">
+                <div class="card-body2">
+                  <h5>[소아 용법/용량]</h5>
+                  · 요로감염증, 피부 및 피부조직 감염증 : 1일 체중 Kg당 30mg(역가)을 2회 분할 경구투여<br>
+                  · 인두염, 편도염 : 1일 체중 Kg당 30mg(역가)을 1～2회 분할 경구투여. 베타 용혈성 연쇄구균감염증에는 적어도 10일간 투여
+                </div>
+              </div>
+                    
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                시럽제 250mg/5ml
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <div class="card">
+                <div class="card-body1">
+                체중: 
+                <input type="number" id="cedrox50weightInput" onkeyup="if (event.key === 'Enter') {cedrox50calculate();}">kg
+                <br><br>
+                <input type="button"  class="btn btn-primary" value="계산하기" id="cedrox50calculateButton" onclick="cedrox50calculate()">
+                <br><br>
+                1일 용량: 
+                <input type="number" id="cedrox50ResultInput">ml
+                <br><br>
+                <input type="button"  class="btn btn-primary" value="초기화" onclick="cedrox50reset()">
+                </div>
+              </div><br><br>  
+
+              <div class="card">
+                <div class="card-body2">
+                  <h5>[소아 용법/용량]</h5>
+                  · 요로감염증, 피부 및 피부조직 감염증 : 1일 체중 Kg당 30mg(역가)을 2회 분할 경구투여<br>
+                  · 인두염, 편도염 : 1일 체중 Kg당 30mg(역가)을 1～2회 분할 경구투여. 베타 용혈성 연쇄구균감염증에는 적어도 10일간 투여
+                </div>
+              </div>     
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

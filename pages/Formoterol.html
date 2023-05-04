@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+ 
+  <body>
+    <div class= content><h1>Formoterol</h1><br>
+        <div class="header" id="header-container"> 
+          <ul class="list-group list-group-horizontal">
+           <li class="list-group-item 1">약효군</li>
+           <li class="list-group-item 2">제형</li>
+           <li class="list-group-item 3">대표 약품</li>
+         </ul>
+         <ul class="list-group list-group-horizontal">
+           <li class="list-group-item list-group-item-primary">호흡기계약물</li>
+           <li class="list-group-item list-group-item-primary">정제, 건조시럽 40mcg/g</li>
+           <li class="list-group-item list-group-item-primary">삼아아토크정20mcg, 삼아아토크건조시럽</li>
+         </ul></div><br><br>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              정제
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <div class="card">
+                <div class="card-body1">
+                체중: 
+                <input type="number" id="formotabweightInput" onkeyup="if (event.key === 'Enter') {formotabcalculate();}">kg
+                <br><br>
+                <input type="button" class="btn btn-primary" value="계산하기" id="formotabcalculateButton" onclick="formotabcalculate()">
+                <br><br>
+                1일 용량: 
+                <input type="number" id="formotabResultInput">mcg
+                <br><br>
+                <input type="button" class="btn btn-primary" value="초기화" onclick="formotabreset()">
+            </div>
+            </div><br><br>
+                      
+              <div class="card">
+                <div class="card-body2">
+                  <h5>[소아 용법/용량]</h5>
+                  [정제]<br>
+                  · 4μg/kg/day div bid~tid<br>
+                  · 연령, 증상에 따라 적절히 증감
+                </div>
+              </div>
+                    
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                건조시럽 40mcg/g
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <div class="card">
+                <div class="card-body1">
+                체중: 
+                <input type="number" id="formosyweightInput" onkeyup="if (event.key === 'Enter') {formosycalculate();}">kg
+                <br><br>
+                <input type="button" value="계산하기" id="formosycalculateButton" onclick="formosycalculate()">
+                <br><br>
+                1일 용량: 
+                <input type="number" id="formosyResultInput">g
+                <br><br>
+                <input type="button" value="초기화" onclick="formosyreset()">
+                </div>
+              </div><br><br>  
+
+              <div class="card">
+                <div class="card-body2">
+                  <h5>[소아 용법/용량]</h5>
+                  [시럽제]<br>
+                  · 4μg (건조시럽으로서 0.1g)/kg/day div bid~tid<br>
+                  · 연령, 증상에 따라 적절히 증감
+                </div>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

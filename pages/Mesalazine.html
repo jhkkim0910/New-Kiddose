@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class= content><h1>Mesalazine</h1><br>
+     <div class="header" id="header-container"> 
+     <ul class="list-group list-group-horizontal">
+      <li class="list-group-item 1">약효군</li>
+      <li class="list-group-item 2">제형</li>
+      <li class="list-group-item 3">대표 약품</li>
+    </ul>
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item list-group-item-primary">소화기계약물</li>
+      <li class="list-group-item list-group-item-primary">서방정, 서방과립</li>
+      <li class="list-group-item list-group-item-primary">펜타사 서방정, 서방과립</li>
+    </ul></div><br><br>
+      <div class="card">
+        <div class="card-body1">
+        체중: 
+        <input type="number" id="mesalweightInput" onkeyup="if (event.key === 'Enter') {mesalcalculate();}">kg
+        <br><br>
+        <input type="button" class="btn btn-primary" value="계산하기" id="mesalcalculateButton" onclick="mesalcalculate()">
+        <br><br>
+        급성발병시 1일 용량: 
+        <input type="number" id="mesalacuteminResultInput">mg~<input type="number" id="mesalacutemaxResultInput">mg
+        <br><br>
+        유지요법 1일 용량: 
+        <input type="number" id="mesalmainminResultInput">mg~<input type="number" id="mesalmainmaxResultInput">mg
+        <br><br>
+        <input type="button" class="btn btn-primary" value="초기화" onclick="mesalreset()">
+        </div>
+      </div><br><br>    
+                    
+      <div class="card">
+        <div class="card-body2">
+          <h5>[소아 용법/용량]</h5>
+          [서방정, 서방과립제]<br> 
+          · 6세 이상 소아의 궤양성 대장염 - 급성발병 시 30~50mg/kg/day div, 유지요법 시 15~30mg/kg/day div <br>
+             - 1일 최대용량: 급성발병 시 4g, 유지요법 시 2g <br>
+          · 6세 이상 소아의 크론병 - 급성발병 시 30~50mg/kg/day div, 유지요법 시 15~30mg/kg/day div <br>
+          · 원칙적으로 40kg를 초과하지 않는 소아의 권장량은 성인의 절반 용량이며 40kg인 소아의 권장량은 일반 복용량에 해당
+        </div>
+      </div>          
+    </div>   
+  </body>
+</html>

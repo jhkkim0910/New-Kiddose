@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class= content><h1>Oseltamivir</h1><br>
+     <div class="header" id="header-container"> 
+     <ul class="list-group list-group-horizontal">
+      <li class="list-group-item 1">약효군</li>
+      <li class="list-group-item 2">제형</li>
+      <li class="list-group-item 3">대표 약품</li>
+      <li class="list-group-item 4">동일약품찾기</li>
+    </ul>
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item list-group-item-primary">항바이러스제</li>
+      <li class="list-group-item list-group-item-primary">캡슐제, 현탁액 6mg/ml</li>
+      <li class="list-group-item list-group-item-primary">타미플루캡슐, 보령플루현탁용분말</li>
+      <li class="list-group-item list-group-item-primary"><a href="https://www.health.kr/searchDrug/result_sunb.asp?drug_cd=A11AKP08G0592" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-search-heart" viewBox="0 0 16 16">
+      <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+      <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
+    </svg>캡슐</a>, <a href="https://www.health.kr/searchDrug/result_sunb.asp?drug_cd=2018010300005" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-search-heart" viewBox="0 0 16 16">
+        <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+        <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
+      </svg>현탁액</a></li>
+    </ul></div><br><br>
+      <div class="card">
+        <div class="card-body1">
+        [2주이상 1세미만] 체중: 
+        <input type="number" id="oselweightInput" onkeyup="if (event.key === 'Enter') {oselcalculate();}">kg
+        <br><br>
+        <input type="button" class="btn btn-primary" value="계산하기" id="oselcalculateButton" onclick="oselcalculate()">
+        <br><br>
+        [2주이상 1세미만] 1회 복용량:<br><br>
+        캡슐 
+        <input type="number" id="oselResultInput">mg
+        <br><br>
+        현탁액
+        <input type="number" id="oselmlResultInput">ml
+        <br><br>
+        <input type="button" class="btn btn-primary" value="초기화" onclick="oselreset()">
+        </div>
+      </div><br><br>    
+                    
+      <div class="card">
+        <div class="card-body2">
+          <h5>[소아 용법/용량]</h5>
+          <h4><소아 용법/용량></h4>
+          · 인플루엔자 A 및 인플루엔자 B 바이러스 감염증<br>
+            - 인플루엔자 증상이 발현된 첫째 또는 둘째 날에 치료를 시작할 것<br>
+            - 식사와 무관하게 복용 가능<br>
+            - 13세 이상 청소년 및 성인: 75mg bid. 5일 동안 복용<br>
+            - 1세 이상 12세 이하 소아: 아래 표에 따라 5일 동안 복용<br>
+            <img src="/pages/osel 용량표.jpg" alt="표" style="max-width: 100%; height: auto;"><br>
+            - 2주 이상 1세 미만 소아: 3mg/kg bid. 5일 동안 복용<br>
+        </div>
+      </div>          
+    </div>   
+  </body>
+</html>

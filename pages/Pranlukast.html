@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class= content><h1>Pranlukast</h1><br>
+     <div class="header" id="header-container"> 
+     <ul class="list-group list-group-horizontal">
+      <li class="list-group-item 1">약효군</li>
+      <li class="list-group-item 2">제형</li>
+      <li class="list-group-item 3">대표 약품</li>
+    </ul>
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item list-group-item-primary">호흡기계약물</li>
+      <li class="list-group-item list-group-item-primary">건조시럽 100mg/g, 현탁정</li>
+      <li class="list-group-item list-group-item-primary">씨투스 건조시럽, 씨투스현탁정</li>
+    </ul></div><br><br>
+      <div class="card">
+        <div class="card-body1">
+        [건조시럽]<br><br>
+        체중: 
+        <input type="number" id="pranluweightInput" onkeyup="if (event.key === 'Enter') {pranlucalculate();}">kg
+        <br><br>
+        <input type="button" class="btn btn-primary" value="계산하기" id="pranlucalculateButton" onclick="pranlucalculate()">
+        <br><br>
+        1일 용량: 
+        <input type="number" id="pranluminResultInput">g
+        <br><br>
+        1일 최대량: 
+        <input type="number" id="pranlumaxResultInput">g
+        <br><br>
+        [현탁정] 건조시럽용량*100 mg
+        <br><br>
+        <input type="button" class="btn btn-primary" value="초기화" onclick="pranlureset()">
+        </div>
+      </div><br><br>    
+                    
+      <div class="card">
+        <div class="card-body2">
+          <h5>[소아 용법/용량]</h5>
+          [분산정, 시럽제]<br>
+          · 7mg/kg/day div bid pc<br>
+          · 1일 최대용량: 10mg/kg/day, 450mg<br>
+          · 분산정: 정제를 삼키거나 분할하여 복용하지 않으며, 소량의 물에 녹여서 복용. 숟가락에 소량의 물을 담고 이 약 1정을 넣어 정제가 붕해되도록 기다린 후 복용하기 전에 저어서 신속히 복용하도록 함<br>
+          · 시럽제: 사용 시 현탁하여 복용
+        </div>
+      </div>          
+    </div>   
+  </body>
+</html>

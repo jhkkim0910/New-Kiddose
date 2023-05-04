@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class= content><h1>Fluconazole</h1><br>
+     <div class="header" id="header-container"> 
+     <ul class="list-group list-group-horizontal">
+      <li class="list-group-item 1">약효군</li>
+      <li class="list-group-item 2">제형</li>
+      <li class="list-group-item 3">대표 약품</li>
+      <li class="list-group-item 4">동일약품찾기</li>
+    </ul>
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item list-group-item-primary">항진균제</li>
+      <li class="list-group-item list-group-item-primary">건조시럽 0.35g/35ml</li>
+      <li class="list-group-item list-group-item-primary">디푸루칸건조시럽</li>
+      <li class="list-group-item list-group-item-primary"><a href='http://www.health.kr/searchDrug/result_sunb.asp?drug_cd=A11A0310A0249' target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-search-heart" viewBox="0 0 16 16">
+      <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+      <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
+    </svg></a></li>
+    </ul></div><br><br>
+      <div class="card">
+        <div class="card-body1">  
+        체중: 
+        <input type="number" id="flucoweightInput" onkeyup="if (event.key === 'Enter') {flucocalculate();}">kg
+        <br><br>
+        <input type="button" class="btn btn-primary" value="계산하기" id="flucocalculateButton" onclick="flucocalculate()">
+        <br><br>
+        [기준용량 3mg/kg] 1일 용량: 
+        <input type="number" id="flucominResultInput">ml
+        <br><br>
+        [기준용량 6mg/kg] 1일 용량: 
+        <input type="number" id="flucomidResultInput">ml
+        <br><br>
+        [기준용량 12mg/kg] 1일 용량: 
+        <input type="number" id="flucomaxResultInput">ml
+        <br><br>
+        <input type="button" class="btn btn-primary" value="초기화" onclick="flucoreset()">
+        </div>
+        </div><br><br>    
+                    
+      <div class="card">
+        <div class="card-body2">
+          <h5>[소아 용법/용량]</h5>
+          [소아]<br>
+          · 최대 400 mg을 초과하지 않는다.<br>
+          · 구강 인두 칸디다증: 첫날 6mg/kg, 다음날 부터 1일 1회 3mg/kg. 재발방지를 위해 최소 2주간 투여<br>
+          · 식도 칸디다증: 첫날 6mg/kg, 다음날 부터 1일 1회 3mg/kg, 환자 반응에 따라 12mg/kg까지 증량가능. 최소 3주간, 증상 소실 후 적어도 2주간 투여<br>
+          · 칸디다혈증, 파종성 칸디다증 및 그 외의 다른 침습성 칸디다감염증(복막, 심내막, 폐, 비뇨기계 등)을 포함한 전신 칸디다증: 1일 1회 6~12mg/kg.<br>
+            투여기간은 임상적 반응 및 의학적 판단에 따라 결정<br>
+          · 크립토콕쿠스 수막염: 첫날 12mg/kg, 다음날 부터 1일 1회 6mg/kg. 환자 반응에 따라 12mg/kg까지 증량가능. 치료기간은 뇌척수액 배양 음성 소견이 있은 후 10 - 12주간 투여<br>
+          · AIDS환자의 크립토콕쿠스 수막염의 재발방지를 위해서는 환자가 기초치료를 모두 받은 후 1일 1회 체중 kg당 6 mg을 투여.<br>
+          · 신장애 소아는 신장애 정도에 따라 성인 신장애 환자와 동일한 기준으로 투여간격을 늘리고 용량을 줄여야 한다. 10 mg 미만의 용량을 투여할 때는, 정확한 양을 맞추기 위해 소아의 임상적 상태에 따라 시럽제를 경구투여하거나, 주사제를 정맥주사 하여야 한다.<br>
+          · 이 약 22g (350 mg/35 ml)은 물 24 ml 에 용해시킨 후 사용하며, 일단 현탁한 용액은 실온에서 14 일간 유효
+        </div>
+      </div>          
+    </div>   
+  </body>
+</html>
