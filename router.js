@@ -28,7 +28,7 @@ const routes = {
     "/carbocysteine" : "/pages/Carbocysteine.html",
     "/ebastine" : "/pages/Ebastine.html",
     "/formoterol" : "/pages/Formoterol.html",
-    "/ivy leaf ext" : "/pages/Ivyleafext.html",
+    "/ivyleafext" : "/pages/Ivyleafext.html",
     "/levocetirizine" : "/pages/Levocetirizine.html",
     "/levodropropizine" : "/pages/Levodropropizine.html",
     "/mequitazine" : "/pages/Mequitazine.html",
@@ -58,6 +58,7 @@ const handleLocation = async()=> {
     const route = isHtml(path) ? path : routes[path] || routes[404];
     const html = await fetch(route).then((data)=> data.text());
     document.getElementById("main-page").innerHTML = html;
+    window.scrollTo(0, 0);
 };
 
 window.onpopstate = handleLocation;
