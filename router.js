@@ -6,6 +6,7 @@ const route= (event) =>{
 };
 
 const routes = {
+    "/weighcalculator" : "/pages/weighcalculator.html",
     404 : "/pages/404.html",
     "/acetaminophen" : "/pages/acetaminophen.html",
     "/dexibuprofen" : "/pages/Dexibuprofen.html",
@@ -28,7 +29,7 @@ const routes = {
     "/carbocysteine" : "/pages/Carbocysteine.html",
     "/ebastine" : "/pages/Ebastine.html",
     "/formoterol" : "/pages/Formoterol.html",
-    "/ivy leaf ext" : "/pages/Ivyleafext.html",
+    "/ivyleafext" : "/pages/Ivyleafext.html",
     "/levocetirizine" : "/pages/Levocetirizine.html",
     "/levodropropizine" : "/pages/Levodropropizine.html",
     "/mequitazine" : "/pages/Mequitazine.html",
@@ -48,7 +49,7 @@ const routes = {
     "/valproate" : "/pages/Valproate.html",
     "/ChloralHydrate" : "/pages/ChloralHydrate.html",
     "/hydroxyzine" : "/pages/Hydroxyzine.html",
-    "/PhenylephrineAndChlorpheniramine" : "/pages/PhenylephrineAndChlorpheniramine.html",
+    "/PhenylephrineAndChlorpheniramine" : "/pages/PhenylephrineAndChlorpheniramine.html"
     };
 
 const isHtml = (path) => path.endsWith(".html");
@@ -58,6 +59,7 @@ const handleLocation = async()=> {
     const route = isHtml(path) ? path : routes[path] || routes[404];
     const html = await fetch(route).then((data)=> data.text());
     document.getElementById("main-page").innerHTML = html;
+    window.scrollTo(0, 0);
 };
 
 window.onpopstate = handleLocation;

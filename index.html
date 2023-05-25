@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-06HPVBRKZ5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-06HPVBRKZ5');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="소아 체중,연령별 약 용량 계산기입니다. 2022년 개정된 식약처의 ‘소아·청소년에 대한 의약품 적정사용 정보집’을 기반으로 소아에게 다빈도로 처방되는 약성분 중심으로 구성하였습니다. 약물별로 환아의 체중을 입력하면 적정 용량을 계산해줌으로써 약사의 처방감사 업무에 도움이 되고자 합니다." />
@@ -113,7 +122,7 @@
               <li><a href="/carbocysteine" onclick="route()" class="link-dark d-inline-flex text-decoration-none rounded">Carbocysteine</a></li>
               <li><a href="/ebastine" onclick="route()" class="link-dark d-inline-flex text-decoration-none rounded">Ebastine</a></li>
               <li><a href="/formoterol" onclick="route()" class="link-dark d-inline-flex text-decoration-none rounded">Formoterol</a></li>
-              <li><a href="/ivy leaf ext" onclick="route()" class="link-dark d-inline-flex text-decoration-none rounded">Ivy leaf ext.</a></li>
+              <li><a href="/ivyleafext" onclick="route()" class="link-dark d-inline-flex text-decoration-none rounded">Ivy leaf ext.</a></li>
               <li><a href="/levocetirizine" onclick="route()" class="link-dark d-inline-flex text-decoration-none rounded">Levocetirizine</a></li>
               <li><a href="/levodropropizine" onclick="route()" class="link-dark d-inline-flex text-decoration-none rounded">Levodropropizine</a></li>
               <li><a href="/mequitazine" onclick="route()" class="link-dark d-inline-flex text-decoration-none rounded">Mequitazine</a></li>
@@ -173,26 +182,18 @@
             </ul>
           </div>
         </li>
-       
-        <!--<li class="border-top my-3"></li>
-        <li class="mb-1">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">         
-            <svg class="bi bi-chevron-down ms-auto" width="16" height="16" fill="currentColor">
-              <path fill-rule="evenodd" d="M8 11.354l4.146-4.146a.5.5 0 01.708.708l-4.5 4.5a.5.5 0 01-.708 0l-4.5-4.5a.5.5 0 01.708-.708L8 11.354z"/>
-            </svg>  Account
-          </button>
-          <div class="collapse" id="account-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">강</a></li>
-              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">필</a></li>
-              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">모</a></li>
-              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">짱!</a></li>
-            </ul>
-          </div>
-        </li>-->
-      </ul>
+        </ul>
+
+       <a href="/weighcalculator" onclick="route()" style="font-size: 16px; color: black; background-color: bisque; text-decoration: none; border-radius: 3px;">건조시럽 환산계수 계산기</a>
+      </div>
+     
+      <ins class="kakao_ad_area" style="display:none;"
+      data-ad-unit = "DAN-8ptK8HN3PPlmfq7H"
+      data-ad-width = "160"
+      data-ad-height = "600"></ins>
+      <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     </div>
-  </div>
+  
 
    
   <div class="col-md-9" id="main-page">
@@ -286,7 +287,7 @@
       </div>
       </div>
     </div>
-   </div> 
+  </div>
     
     <footer>
     <div class="container">
@@ -310,4 +311,4 @@
 </html>
 
 <!--github에 수정본 올리는법
-  git add . -> git status(확인용도) -> git commit -m "second commit" -> git push origin main 끝 The latest commit message: new version third commit-->
+  git add . -> git status(확인용도) -> git commit -m "second commit" -> git push origin main 끝 The latest commit message: new version 6th commit-->

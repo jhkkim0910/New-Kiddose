@@ -571,6 +571,38 @@ document.getElementById("valprocalculateButton").addEventListener("click", funct
 document.getElementById("valproweightInput").addEventListener("keyup", function(event) {if (event.key === "Enter") {valprocalculate();}});
 
 
+function CFcalculate(){
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    let c = Number(document.getElementById("c").value);
+    let d = Number(document.getElementById("d").value);
+    let e = (c *a) /(1000 *d *b)
+    document.getElementById("e").value = e
+};
+function CFreset(){
+    document.getElementById("a").value="";
+    document.getElementById("b").value="";
+    document.getElementById("c").value="";
+    document.getElementById("d").value="";
+    document.getElementById("e").value="";
+};
+document.getElementById("CFcalculateButton").addEventListener("click", function(){CFcalculate();});
+document.getElementById("d").addEventListener("keyup", function(event){if(event.key === "Enter") {CFcalculate();}});
+
+function weighCalculate(){
+  let f = Number(document.getElementById("f").value);
+  let g = Number(document.getElementById("g").value);
+  let h = (f *g)
+  document.getElementById("h").value=h
+};
+function weighreset(){
+  document.getElementById("f").value="";
+  document.getElementById("g").value="";
+  document.getElementById("h").value="";
+};
+document.getElementById("weighCalculateButton").addEventListener("click", function(){weighCalculate();});
+document.getElementById("g").addEventListener("keyup", function(event){if(event.key === "Enter") {weighCalculate();}});
+
 /*const searchInput = document.getElementById('search');
 const searchButton = document.getElementById('search-button');
 const list = document.getElementById('list1');
