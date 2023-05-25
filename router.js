@@ -49,6 +49,7 @@ const routes = {
     "/ChloralHydrate" : "/pages/ChloralHydrate.html",
     "/hydroxyzine" : "/pages/Hydroxyzine.html",
     "/PhenylephrineAndChlorpheniramine" : "/pages/PhenylephrineAndChlorpheniramine.html",
+    "/Calculator" : "/pages/Calculator.html"
     };
 
 const isHtml = (path) => path.endsWith(".html");
@@ -58,7 +59,6 @@ const handleLocation = async()=> {
     const route = isHtml(path) ? path : routes[path] || routes[404];
     const html = await fetch(route).then((data)=> data.text());
     document.getElementById("main-page").innerHTML = html;
-    window.scrollTo(0, 0);
 };
 
 window.onpopstate = handleLocation;
