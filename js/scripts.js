@@ -509,7 +509,7 @@ document.getElementById("metocloweightInput").addEventListener("keyup", function
 
 
 function oselcalculate() {
-        let oselweight = Number(document.getElementById("oselweightInput").value);
+        letoselweight = Number(document.getElementById("oselweightInput").value);
         let oselResult = (oselweight * 3) ;
         document.getElementById("oselResultInput").value = oselResult;
         let oselmlResult = (oselweight * 3)/6 ;
@@ -602,6 +602,131 @@ function weighreset(){
 };
 document.getElementById("weighCalculateButton").addEventListener("click", function(){weighCalculate();});
 document.getElementById("g").addEventListener("keyup", function(event){if(event.key === "Enter") {weighCalculate();}});
+
+
+function amoxigcalculate(){
+  let amoximl = Number(document.getElementById("amoximl").value);
+  let amoxigresult = (amoximl * 0.774);
+  document.getElementById("amoxigresult").value = amoxigresult;
+};
+document.getElementById("amoxigcalculateButton").addEventListener("click", function(){amoxigcalculate();});
+document.getElementById("amoximl").addEventListener("keyup", function(event){if(event.key === "Enter") {amoxigcalculate();}});
+
+function AC7gcalculate(){
+  let AC7ml = Number(document.getElementById("AC7ml").value);
+  let AC7gresult = (AC7ml * 0.110);
+  document.getElementById("AC7gresult").value = AC7gresult;
+}
+document.getElementById("AC7gcalculateButton").addEventListener("click", function(){AC7gcalculate();});
+document.getElementById("AC7ml").addEventListener("keyup", function(event){if(event.key === "Enter") {AC7gcalculate();}});
+
+
+function AC14gcalculate(){
+  let AC14ml = Number(document.getElementById("AC14ml").value);
+  let AC14gresult = (AC14ml * 0.220);
+  document.getElementById("AC14gresult").value = AC14gresult;
+}
+document.getElementById("AC14gcalculateButton").addEventListener("click", function(){AC14gcalculate();});
+document.getElementById("AC14ml").addEventListener("keyup", function(event){if(event.key === "Enter") {AC14gcalculate();}});
+
+
+function azigcalculate(){
+  let aziml = Number(document.getElementById("aziml").value);
+  let azigresult = (aziml * 0.798);
+  document.getElementById("azigresult").value = azigresult;
+}
+document.getElementById("azigcalculateButton").addEventListener("click", function(){azigcalculate();});
+document.getElementById("aziml").addEventListener("keyup", function(event){if(event.key === "Enter") {azigcalculate();}});
+
+
+function ceclgcalculate(){
+  let ceclml = Number(document.getElementById("ceclml").value);
+  let ceclgresult = (ceclml * 0.667);
+  document.getElementById("ceclgresult").value = ceclgresult;
+}
+document.getElementById("ceclgcalculateButton").addEventListener("click", function(){ceclgcalculate();});
+document.getElementById("ceclml").addEventListener("keyup", function(event){if(event.key === "Enter") {ceclgcalculate();}});
+
+
+function cedrox25gcalculate(){
+  let cedrox25ml = Number(document.getElementById("cedrox25ml").value);
+  let cedrox25gresult = (cedrox25ml * 0.556);
+  document.getElementById("cedrox25gresult").value = cedrox25gresult;
+}
+document.getElementById("cedrox25gcalculateButton").addEventListener("click", function(){cedrox25gcalculate();});
+document.getElementById("cedrox25ml").addEventListener("keyup", function(event){if(event.key === "Enter") {cedrox25gcalculate();}});
+
+
+function cedrox50gcalculate(){
+  let cedrox50ml = Number(document.getElementById("cedrox50ml").value);
+  let cedrox50gresult = (cedrox50ml * 0.556);
+  document.getElementById("cedrox50gresult").value = cedrox50gresult;
+}
+document.getElementById("cedrox50gcalculateButton").addEventListener("click", function(){cedrox50gcalculate();});
+document.getElementById("cedrox50ml").addEventListener("keyup", function(event){if(event.key === "Enter") {cedrox50gcalculate();}});
+
+function cefpogcalculate(){
+  let cefpoml = Number(document.getElementById("cefpoml").value);
+  let cefpogresult = (cefpoml * 0.2);
+  document.getElementById("cefpogresult").value = cefpogresult;
+}
+document.getElementById("cefpogcalculateButton").addEventListener("click", function(){cefpogcalculate();});
+document.getElementById("cefpoml").addEventListener("keyup", function(event){if(event.key === "Enter") {cefpogcalculate();}});
+
+
+function clari25gcalculate(){
+  let clari25ml = Number(document.getElementById("clari25ml").value);
+  let clari25gresult = (clari25ml * 0.705);
+  document.getElementById("clari25gresult").value = clari25gresult;
+}
+document.getElementById("clari25gcalculateButton").addEventListener("click", function(){clari25gcalculate();});
+document.getElementById("clari25ml").addEventListener("keyup", function(event){if(event.key === "Enter") {clari25gcalculate();}});
+
+
+function clari50gcalculate(){
+  let clari50ml = Number(document.getElementById("clari50ml").value);
+  let clari50gresult = (clari50ml * 0.708);
+  document.getElementById("clari50gresult").value = clari50gresult;
+}
+document.getElementById("clari50gcalculateButton").addEventListener("click", function(){clari50gcalculate();});
+document.getElementById("clari50ml").addEventListener("keyup", function(event){if(event.key === "Enter") {clari50gcalculate();}});
+
+
+function acygcalculate(){
+  let acyml = Number(document.getElementById("acyml").value);
+  let acygresult = (acyml * 0.667);
+  document.getElementById("acygresult").value = acygresult;
+}
+document.getElementById("acygcalculateButton").addEventListener("click", function(){acygcalculate();});
+document.getElementById("acyml").addEventListener("keyup", function(event){if(event.key === "Enter") {acygcalculate();}});
+
+
+function oselgcalculate(){
+  let oselml = Number(document.getElementById("oselml").value);
+  let oselgresult = (oselml * 0.2);
+  document.getElementById("oselgresult").value = oselgresult;
+}
+document.getElementById("oselgcalculateButton").addEventListener("click", function(){oselgcalculate();});
+document.getElementById("oselml").addEventListener("keyup", function(event){if(event.key === "Enter") {oselgcalculate();}});
+
+
+function flucogcalculate(){
+  let flucoml = Number(document.getElementById("flucoml").value);
+  let flucogresult = (flucoml * 0.610);
+  document.getElementById("flucogresult").value = flucogresult;
+}
+document.getElementById("flucogcalculateButton").addEventListener("click", function(){flucogcalculate();});
+document.getElementById("flucoml").addEventListener("keyup", function(event){if(event.key === "Enter") {flucogcalculate();}});
+
+
+function trimegcalculate(){
+  let trimeml = Number(document.getElementById("trimeml").value);
+  let trimegresult = (trimeml * 0.610);
+  document.getElementById("trimegresult").value =trimegresult;
+}
+document.getElementById("trimegcalculateButton").addEventListener("click", function(){trimegcalculate();});
+document.getElementById("trimeml").addEventListener("keyup", function(event){if(event.key === "Enter") {trimegcalculate();}});
+
 
 /*const searchInput = document.getElementById('search');
 const searchButton = document.getElementById('search-button');
