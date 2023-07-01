@@ -111,6 +111,10 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.list-group-item {
+  background-color: rgba(135, 206, 250, 0.1);
+
+}
 #copyBtn {
   cursor: pointer;
 }
@@ -118,3 +122,5 @@ body {
 .highlight {
   background-color: yellow;
 }
+
+
