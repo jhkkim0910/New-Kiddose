@@ -1,15 +1,15 @@
 const sidebarToggle = document.getElementById("sidebarToggle");
 const sidebar = document.getElementById('sidebar');
-const mainPage = document.getElementById("main-page");
+const content = document.getElementById("content");
 
 function openSidebar() {
   sidebar.classList.add('show');
-  mainPage.classList.add('slide');
+  content.classList.add('slide');
 }
 
 function closeSidebar() {
   sidebar.classList.remove('show');
-  mainPage.classList.remove('slide');
+  content.classList.remove('slide');
 }
 
 sidebarToggle.addEventListener('click', (e) => {

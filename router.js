@@ -6,6 +6,7 @@ const route= (event) =>{
 };
 
 const routes = {
+    "/" : "pages/index.html",
     "/weighcalculator" : "/pages/weighcalculator.html",
     404 : "/pages/404.html",
     "/acetaminophen" : "/pages/acetaminophen.html",
@@ -58,7 +59,7 @@ const handleLocation = async()=> {
     const path = window.location.pathname;
     const route = isHtml(path) ? path : routes[path] || routes[404];
     const html = await fetch(route).then((data)=> data.text());
-    document.getElementById("main-page").innerHTML = html;
+    document.getElementById("content").innerHTML = html;
     window.scrollTo(0, 0);
 };
 
