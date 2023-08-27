@@ -123,4 +123,6 @@ body {
   background-color: yellow;
 }
 
-
+#content li a:hover {
+  background-color: rgba(245, 245, 19, 0.5);
+}
